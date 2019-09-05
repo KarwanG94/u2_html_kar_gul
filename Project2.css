@@ -162,7 +162,7 @@ body{
 .footHead2{
 	font-size: 1.5vw;
 	color: white;
-	margin-left: 13%;
+	margin-left: 8%;
 	margin-top: 5%;
 	position: absolute;
 }
@@ -170,7 +170,8 @@ body{
 .footMedia{
 	font-size: 1.5vw;
 	color: white;
-	margin-left: 70%;
+	margin-left: 50%;
+	margin-top: 5%;
 	position: absolute;
 }
 
@@ -178,21 +179,22 @@ body{
 	font-size: 1.3vw;
 	color: white;
 	margin-top: 8%;
-	margin-left: 13%;
+	margin-left: 8%;
 	position: absolute;
 }
 
 .footKontakt{
 	font-size: 1.5vw;
-	margin-left: 80%;
+	margin-left: 60%;
+	margin-top: 3.5%;
 	color: white;
 	position: absolute;
 }
 
 .Icons{
 	display: inline-flex;
-	margin-top: 5%;
-	margin-left: 69%;
+	margin-top: 8%;
+	margin-left: 49%;
 	position: absolute;
 }
 
@@ -206,12 +208,20 @@ body{
 	opacity: .3;
 }
 
+.adress{
+	font-size: 1.5vw;
+	margin-left: 75%;
+	margin-top: 5%;
+	position: absolute;
+	color: white;
+}
+
 .googleMaps{
 	height: 30%;
 	border: 0;
 	position: absolute;
-	margin-top: 10%;
-	margin-left: 70%;
+	margin-top: 14%;
+	margin-left: 75%;
 }
 
 
