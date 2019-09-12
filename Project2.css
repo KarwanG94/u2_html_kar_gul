@@ -45,25 +45,6 @@ body{
 	color: #00008B;
 }
 
-.flexContainer{
-	display: flex;
-	list-style: none;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-.flex-item{
-	background-color: tomato;
-	width: 150px;
-	height: 100px;
-	margin-top: 10px;
-
-	line-height: 100px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.5vw;
-}
-
 #textContainer{
 	width: 100%;
 }
@@ -97,6 +78,29 @@ body{
 	width: 100%;
 	height: 95vh;
 }
+
+.newsHead{
+	background-color: tomato;
+	border: 2px solid;
+	text-align: center;
+	width: 99%;
+}
+
+#flexContainer{
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	background-color: grey;
+	justify-content: center;
+}
+
+.flexContent{
+	width: 20%;
+	border: 1px solid;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
 
 .headerBrands{
 	margin-left: 42%;
@@ -161,7 +165,8 @@ body{
 
 #navSlide{
 	background-color: #094a85;
-	padding-top: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	text-align: center;
 	width: 100%;
 }
@@ -173,6 +178,12 @@ body{
 	font-size: 2vw;
 	text-decoration: none;
 }
+
+.links:hover{
+	opacity: .3;
+}
+
+/*Footer stuff */
 
 #footContainer{
 	background-color: #094a85;
@@ -199,7 +210,7 @@ body{
 .footMedia{
 	font-size: 1.5vw;
 	color: white;
-	margin-left: 50%;
+	margin-left: 65%;
 	margin-top: 5%;
 	position: absolute;
 }
@@ -214,7 +225,7 @@ body{
 
 .footKontakt{
 	font-size: 1.5vw;
-	margin-left: 60%;
+	margin-left: 45%;
 	margin-top: 3.5%;
 	color: white;
 	position: absolute;
@@ -223,7 +234,7 @@ body{
 .Icons{
 	display: inline-flex;
 	margin-top: 8%;
-	margin-left: 49%;
+	margin-left: 64.5%;
 	position: absolute;
 }
 
@@ -253,6 +264,35 @@ body{
 	margin-left: 75%;
 }
 
+#contactContainer{
+	position: absolute;
+	margin-left: 45%;
+	margin-top: 12%;
+	width: 30%;
+}
+
+.myInput{
+	display: block;
+	width: 50%;
+	color: white;
+}
+
+#subject{
+	height: 100px;
+	width: 50%;
+	display: block;
+}
+
+.subButt{
+	margin-left: 17%;
+	margin-top: 2%;
+}
+
+.subButt:hover{
+	color: white;
+	background-color: black;
+}
+
 
 /* 508 Page */
 
@@ -268,6 +308,7 @@ body{
 }
 
 .grid-items{
+	border: 2px solid;
 	transition: .5s;
 }
 
@@ -343,21 +384,6 @@ body{
     grid-row-end: 9;
 }
 
+/* Contact page */
 
 
-/*
-
-#fade{
-	animation:fade 2s infinite;
-	-webkit-animation:fade 2s infinite;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
-}*/
