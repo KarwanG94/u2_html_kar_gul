@@ -1,6 +1,9 @@
 body{
 	margin: 0;
+	position: relative;
+	height: 400vh;
 }
+
 
 
 #Navigation{
@@ -39,10 +42,15 @@ body{
 }
 
 .mainLogo{
-	margin-left: 33%;
+	float: left;
+	position: absolute;
 	font-size: 3vw;
 	text-decoration: none;
 	color: #00008B;
+}
+
+.mainLogo:hover{
+	font-size: 4vw;
 }
 
 #textContainer{
@@ -80,17 +88,19 @@ body{
 }
 
 .newsHead{
-	background-color: tomato;
-	border: 2px solid;
+	background-color: #094a85;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	text-align: center;
 	width: 99%;
+	color: white;
 }
 
 #flexContainer{
 	display: flex;
 	max-width: 100%;
 	flex-wrap: wrap;
-	background-color: grey;
+	background-color: white;
 	justify-content: center;
 }
 
@@ -98,6 +108,7 @@ body{
 	width: 20%;
 	border: 1px solid;
 	text-align: center;
+	background-color: #f1f4f6;
 	font-size: 1.5vw;
 }
 
@@ -187,8 +198,11 @@ body{
 
 #footContainer{
 	background-color: #094a85;
-	margin-top: 10%;
-	padding-bottom: 30%;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-bottom: 450px;
+	height: 2.5rem;
 }
 
 .footHead{
@@ -257,7 +271,8 @@ body{
 }
 
 .googleMaps{
-	height: 30%;
+	height: 200px;
+	width: 20%;
 	border: 0;
 	position: absolute;
 	margin-top: 14%;
@@ -384,6 +399,267 @@ body{
     grid-row-end: 9;
 }
 
-/* Contact page */
+/* gallery page*/
+
+.galleryHead{
+	position: absolute;
+	background-color: #f1f4f6;
+	width: 100%;
+	margin-top: 10%;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.gridGalleryCon{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(14, 9vw);
+	grid-gap: 2px;
+	margin-bottom: 30%;
+	margin-left: 15%;
+	margin-top: 20%;
+	width: 70%;
+	position: absolute;
+}
+
+.galleryItems{
+	border: 2px solid;
+	text-align: center;
+	font-size: 2vw;
+	max-width: 100%;
+	transition: .5s;
+}
+
+.galleryItems:hover {
+	opacity: .5;
+	transition: .5s;
+}
+
+.galleryItems p{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.galleryItems p:hover{
+	opacity: 1;
+}
+
+.galleryitem1{
+	background-image: url(https://pictures.dealer.com/s/sandbergnorthwestvolvovcna/0217/c9c8d64fa9f413ea7a8d514bb5749ca9x.jpg?impolicy=resize&w=1024);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.galleryitem2{
+	background-image: url(https://www.vibilagare.se/sites/vibilagare.se/files/styles/main_image_full/public/images/2017/02/interior_blond_volvo_s90.jpg?itok=jcqfpU0I);
+	background-size: cover;
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.galleryitem3{
+	background-image: url(https://ftek.se/wp-content/uploads/2018/08/dragos.png);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.galleryitem4{
+	background-image: url(https://i.pinimg.com/originals/7a/70/34/7a70344f17e497af75999f6cffaf2ff8.jpg);
+	background-size: cover;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.galleryitem5{
+	background-image: url(https://pictures.topspeed.com/IMG/crop/201902/volvo-xc90-34_800x0w.jpg);
+	background-size: cover;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.galleryitem6{
+	background-image: url(https://i.ytimg.com/vi/FlOBzhL1CG8/maxresdefault.jpg);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+.galleryitem7{
+	background-image: url(https://image.iol.co.za/image/1/process/620x349?source=https://inm-baobab-prod-eu-west-1.s3.amazonaws.com/public/inm/media/image/iol/2019/02/21/19419234/IOLmot21feb19_58_c.jpg&operation=CROP&offset=1802x1332&resize=4545x2556);
+	background-size: cover;
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+.galleryitem8{
+	background-image: url(https://www.jing.fm/clipimg/full/9-98991_download-joker-clipart-old-batman-cartoon-and-2019.png);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 7;
+	grid-row-end: 10;
+}
+
+.galleryitem9{
+	background-image: url(https://jbil.se/sites/default/files/styles/hero_image_mobile/public/mobil_800x600_508_sw_2.jpg?itok=RRIOv6yq);
+	background-size: cover;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 7;
+	grid-row-end: 9;
+}
+
+.galleryitem10{
+	background-image: url(https://www.automobiledimension.com/photos/interior/peugeot-508-sw-2019-boot.jpg);
+	background-size: cover;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row-start: 7;
+	grid-row-end: 9;
+}
+
+.galleryitem11{
+	background-image: url(https://cdn.motor1.com/images/mgl/kPmmN/s1/2019-renault-koleos.jpg);
+	background-size: cover;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	grid-row-start: 9;
+	grid-row-end: 13;
+}
+
+.galleryitem12{
+	background-image: url(https://cdn.shopify.com/s/files/1/0054/4371/5170/products/FiGPiN_85_Robin_BATMAN_CLASSIC_PIN_600x600.png?v=1539211007);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 10;
+	grid-row-end: 13;
+}
 
 
+.galleryitem14{
+	background-image: url(https://www.driving.co.uk/s3/st-driving-prod/uploads/2019/01/megane-rs-10.jpg);
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 13;
+	grid-row-end: 15;
+}
+
+.galleryitem15{
+	background-image: url(https://www.cdn.renault.com/content/dam/Renault/master/vehicules/talisman-estate-kfd-ph1/accessories-kfd/renault-talisman-estate-kfd-ph1-accessories-002.jpg.ximg.s_12_h.smart.jpg);
+	background-size: cover;
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 13;
+	grid-row-end: 15;
+}
+
+
+/* Media queries (Responsive page) */
+
+@media only screen and (max-width: 700px) {
+
+  #Navigation{
+  	display: flex;
+	flex-direction: column;
+	background-color: #094a85;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10%;
+  }
+  #Navigation a{
+  	color: white;
+  	font-size: 3vw;
+  }
+
+  #flexContainer{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	background-color: white;
+  }
+
+  .flexContent{
+  	font-size: 2vw;
+  	width: 90%;
+  	height: 100px;
+  	background-color: #f1f4f6;
+  }
+
+  #contactContainer{
+  	position: absolute;
+  	width: 50%;
+  	margin-left: 2%;
+  	margin-top: 200px;
+  }
+
+  .footKontakt{
+  	margin-left: 2%;
+  	width: 30%;
+  	font-size: 3vw;
+  }
+
+  .adress{
+  	margin-left: 70%;
+  	width: 30%;
+  	font-size: 3vw;
+  }
+
+  .Icons{
+  	display: flex;
+  	flex-direction: column;
+	margin-left: 50%;
+	width: 10%;
+  }
+
+  .googleMaps{
+  	margin-top: 200px;
+  	margin-left: 50%;
+  	width: 40%;
+  }
+ 
+
+ /* Removed desktop content */
+  .footHeaders{
+  	display: none;
+  }	
+  .footText{
+  	display: none;
+  }
+  .gridGalleryCon{
+	display: grid;
+  }
+
+  .mainLogo{
+  	display: none;
+  }
+
+  #navSlide{
+  	display: none;
+  }
+  #textContainer{
+  	display: none;
+  }
+
+  .content{
+	display: none;
+  }
+}
